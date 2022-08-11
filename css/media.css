@@ -1,0 +1,187 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width: 1400px) {
+
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width: 1200px) {
+  .reviews-list {
+    right: 0;
+    left: auto;
+  }
+
+  .features__item {
+    width: 44%;
+  }
+
+  .about {
+    position: relative;
+    padding: 80px 0 70px;
+  }
+
+  .about__desk {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .about .logo {
+    position: absolute;
+    /*transform: translateY(-500px);*/
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* md <= Large (lg) */
+@media (max-width: 992px) {
+  .main-nav__item > a {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .main-nav__item:first-child > a {
+    padding-right: 20px;
+  }
+  .main-nav__item:last-child > a {
+    padding-left: 20px;
+  }
+
+  .about img {
+    transform: scale(0.7);
+  }
+}
+
+/* sm <= Medium (md) */
+@media (max-width: 768px) {
+  .main-nav__item > a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-nav__item:first-child > a {
+    padding-right: 5px;
+  }
+  .main-nav__item:last-child > a {
+    padding-left: 5px;
+  }
+
+  .features__item p {
+    width: auto;
+  }
+
+  .about .logo {
+    display: none;
+  }
+}
+
+/* xs <= Small (sm) */
+@media (max-width: 576px) {
+  .main-nav {
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 23.44%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 92.71%, #000000 100%),
+    url("../images/bg-mobile.jpg") no-repeat;
+
+    background-size: cover;
+
+    padding-bottom: 1px;
+
+  }
+  .main-nav__mobile {
+    display: flex;
+  }
+  .main-nav__list {
+    /*display: none;*//*todo по клику бургера*/
+    width: 74%;
+  }
+  .main-nav__item {
+    display: block;
+    padding-bottom: 0;
+  }
+  .main-nav__link.active {
+    border-bottom: 1px solid var(--accent);
+    display: inline-block;
+    width: 100%;
+  }
+
+  .main-nav__logo-social{
+    display: block;/*todo по клику бургера*/
+  }
+
+  .main-nav::after {
+    display: block;
+    content: "";
+    width: 110px;
+    height: 535px;
+    background: url("../images/menu-blotch.png") no-repeat right;
+    position: absolute;
+    top: 90px;
+    right: 0;
+
+  }
+
+  .reviews-list {
+    position: static;
+  }
+
+  .about {
+    padding: 40px 0 60px;
+  }
+
+  .about img, .about__desk {
+    display: none;
+  }
+
+  .features__item {
+    width: 100%;
+  }
+  .features__item p {
+    width: 265px;
+  }
+
+  .button {
+    width: 94%;
+  }
+}
+
+/*
+
+!* === MOBILE FIRST === *!
+
+!* Custom (xs) *!
+@media (min-width : 0) {
+
+}
+
+!* Small (sm) *!
+@media (min-width : 576px) {
+
+}
+
+!* Medium (md) *!
+@media (min-width : 768px) {
+
+}
+
+!* Large (lg) *!
+@media (min-width : 992px) {
+
+}
+
+!* Extra large (xl) *!
+@media (min-width : 1200px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+!* Extra extra large (xxl) *!
+@media (min-width : 1400px) {
+	.text {
+		font-size: 22px;
+	}
+}
+*/
