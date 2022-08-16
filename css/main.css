@@ -263,6 +263,7 @@ a {
   cursor: pointer;
 
 }
+
 .slider__btn img {
   max-width: 100%;
   height: auto;
@@ -471,13 +472,17 @@ a {
 
 .features__item {
   /*width: 265px;*/
-  width: 25%;
+  /*width: 25%;*/
   margin-bottom: 40px;
   padding-top: 90px;
 
   position: relative;
   /*overflow: hidden;*/
+  text-align: center;
+}
 
+.about__feature .features__item {
+  width: 25%;
 }
 
 .features__item::before {
@@ -509,10 +514,38 @@ a {
   background: url("../images/feature-4.png") 50% 0 no-repeat;
 }
 
+.features__item--5 {
+  background: url("../images/feature-5.png") 50% 0 no-repeat;
+}
+
+.features__item--6 {
+  background: url("../images/feature-6.png") 50% 0 no-repeat;
+}
+
+.features__item--7 {
+  background: url("../images/feature-7.png") 50% 0 no-repeat;
+}
+
+.features__item--8 {
+  background: url("../images/feature-8.png") 50% 0 no-repeat;
+}
+
 .features__item p {
-  width: 265px;
   margin: 0 auto;
   font-weight: 500;
+}
+
+.about .features__item p {
+  width: 265px;
+}
+
+.features__title {
+  margin: 5px 0 20px;
+  font-family: 'azoft-sans-ts';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .about .logo {
@@ -546,6 +579,7 @@ a {
   width: 580px;
   min-height: 999px;
 }
+
 .black-white__bg {
   background: url("../images/bg-black-white.jpg") no-repeat top center;
 }
@@ -558,6 +592,115 @@ a {
 .color .slider {
   order: 1;
 }
+
 .color__bg {
   background: url("../images/bg-color.jpg") no-repeat top center;
+}
+
+/*SERVICES*/
+.services {
+  padding: 90px 0;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 23.44%), linear-gradient(180deg, rgba(0, 0, 0, 0) 92.71%, #000000 100%), url("../images/bg-services.jpg");
+  background-size: cover;
+}
+
+.services .features__item {
+  width: 32%;
+}
+
+.services__features {
+  margin-bottom: 110px;
+}
+
+.services .features__item p {
+  max-width: 300px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*card*/
+.card {
+  padding: 23px 15px 0;
+  text-align: center;
+
+  background: rgba(40, 40, 40, 0.3);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), 0px 0px 250px rgba(255, 88, 228, 0.35);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card__title {
+  margin: 0 0 10px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--accent);
+  font-family: 'azoft-sans-ts';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.card p {
+  margin: 0 0 10px;
+}
+
+.card p > span {
+  display: inline-block;
+  padding-bottom: 15px;
+  font-family: "azoft-sans-ts";
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  line-height: 2;
+}
+
+.card__price {
+  height: 118px;
+  line-height: 118px;
+  font-family: "azoft-sans-ts";
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--black);
+  background: url("../images/bg-card.png") 50% 50% no-repeat;
+}
+
+.card__price--accent {
+  background-image: url("../images/bg-card-color.png");
+}
+
+.card__txt {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--accent);
+}
+
+.card__link {
+  display: inline-block;
+  width: 100%;
+  padding: 18px;
+  font-family: "azoft-sans-ts";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.card__link--accent {
+  background-color: var(--accent);
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
 }
