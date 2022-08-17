@@ -30,7 +30,6 @@
 
   .hero .logo {
     position: absolute;
-    /*transform: translateY(-500px);*/
     bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
@@ -78,6 +77,18 @@
     justify-content: space-around;
   }
 
+  .contacts p {
+    margin-right: auto;
+  }
+
+  .contacts__item-2 {
+    order: 1;
+    width: 100%;
+  }
+
+  .copy {
+    text-align: right;
+  }
 }
 
 /* md <= Large (lg) */
@@ -154,6 +165,15 @@
     width: 50%;
     margin-bottom: 20px;
   }
+
+  .contacts__item-2 {
+    order: 0;
+    width: auto;
+  }
+
+  .contacts p {
+    margin-bottom: 20px;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -193,7 +213,6 @@
     width: 100%;
     position: absolute;
     top: 60%;
-
   }
 
   .black-white__bg,
@@ -209,8 +228,6 @@
   }
 
   .about__img {
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     width: 100%;
   }
 
@@ -219,6 +236,24 @@
     height: 90px;
     transform: translate(2%, -58%);
   }
+
+  .footer__wrap {
+    flex-wrap: wrap;
+  }
+
+  .footer__logo-social {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contacts p {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .copy {
+    text-align: center;
+  }
 }
 
 /* xs <= Small (sm) */
@@ -226,15 +261,11 @@
   .main-nav {
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 23.44%),
     linear-gradient(180deg, rgba(0, 0, 0, 0) 92.71%, #000000 100%),
     url("../images/bg-mobile.jpg") no-repeat;
-
     background-size: cover;
-
     padding-bottom: 1px;
-
   }
 
   .main-nav__mobile {
@@ -270,7 +301,6 @@
     position: absolute;
     top: 90px;
     right: 0;
-
   }
 
   .reviews-list {
@@ -300,43 +330,21 @@
   .statistic__item {
     width: 100%;
   }
+
+  .contacts p {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .contacts__link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .copy {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
-
-/*
-
-!* === MOBILE FIRST === *!
-
-!* Custom (xs) *!
-@media (min-width : 0) {
-
-}
-
-!* Small (sm) *!
-@media (min-width : 576px) {
-
-}
-
-!* Medium (md) *!
-@media (min-width : 768px) {
-
-}
-
-!* Large (lg) *!
-@media (min-width : 992px) {
-
-}
-
-!* Extra large (xl) *!
-@media (min-width : 1200px) {
-	.text {
-		font-size: 18px;
-	}
-}
-
-!* Extra extra large (xxl) *!
-@media (min-width : 1400px) {
-	.text {
-		font-size: 22px;
-	}
-}
-*/
