@@ -19,3 +19,20 @@
   /*box-shadow: 0px 4px 93px 39px #FF58E4;*/
 }
 <!--        <img src="images/feature-1.png" alt="стилизованная иконка">-->
+
+<footer class="footer">
+  <div class="logo-social">
+    <img class="logo" src="images/logo.png" alt="Логотип: MomSorry.tattoo" width="135" height="160">
+    <p class="social">
+      <a href="#" class="facebook">
+        <img src="images/facebook.svg" alt="иконка фейсбук" width="32" height="32">
+      </a>
+      <a href="#" class="instagram">
+        <img src="images/instagram.svg" alt="иконка инстаграм" width="32" height="32">
+      </a>
+      <a href="#" class="vk">
+        <img src="images/vk.svg" alt="иконка в контакте" width="32" height="32">
+      </a>
+    </p>
+  </div>
+</footer>
